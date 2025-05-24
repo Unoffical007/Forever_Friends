@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey Abi!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Hind+Madurai:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="welcome-page">
+    <div class="container">
+        <h1 class="welcome-message">Hi ABI! </h1>
+        <button id="surprise-button" class="surprise-button">
+            <span>Click to Open Surprise</span>
+        </button>
+    </div>
+    <script>
+        document.getElementById('surprise-button').addEventListener('click', function() {
+            this.classList.add('button-clicked');
+            setTimeout(() => {
+                window.location.href = 'surprise.html';
+            }, 800);
+        });
+    </script>
+</body>
+</html>
